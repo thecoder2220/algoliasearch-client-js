@@ -1,9 +1,7 @@
-/* global instantsearch */
-
 const search = instantsearch({
-  appId: 'latency',
-  apiKey: '6be0576ff61c053d5f9a3225e2a90f76',
-  indexName: 'instant_search',
+  appId: 'IU2NJGQNX5',
+  apiKey: '67ac965a1bb11052ae1c138f1ce2ab3e',
+  indexName: 'ecommerce',
   searchParameters: {
     hitsPerPage: 8,
   },
