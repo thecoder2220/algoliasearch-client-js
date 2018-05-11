@@ -1,6 +1,6 @@
 const search = instantsearch({
-  appId: 'IU2NJGQNX5',
-  apiKey: '67ac965a1bb11052ae1c138f1ce2ab3e',
+  appId: '47CSD2QLER',
+  apiKey: 'b77f1a0f29c4243afda6282330456514',
   indexName: 'ecommerce',
   searchParameters: {
     hitsPerPage: 8,
