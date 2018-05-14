@@ -1,7 +1,7 @@
 const search = instantsearch({
   appId: '47CSD2QLER',
   apiKey: 'b77f1a0f29c4243afda6282330456514',
-  indexName: 'test_textblocks',
+  indexName: 'paragraphs',
   searchParameters: {
     hitsPerPage: 8,
   },
@@ -9,7 +9,7 @@ const search = instantsearch({
 
 search.addWidget(
   instantsearch.widgets.hits({
-    container: document.querySelector('#products'),
+    container: document.querySelector('#paragraphs'),
     templates: {
       item: '{{{_highlightResult.content.value}}}',
     },
@@ -19,7 +19,7 @@ search.addWidget(
 search.addWidget(
   instantsearch.widgets.searchBox({
     container: document.querySelector('#searchBox'),
-    placeholder: 'Search for products',
+    placeholder: 'Search for paragraphs',
     autofocus: false /* Only to avoid live preview taking focus */,
   })
 );

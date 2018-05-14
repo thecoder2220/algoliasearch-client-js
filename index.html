@@ -1,29 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:swp="http://www.sword-connect.com/XSL/Functions" lang="fr">
   <head>
     <!-- Do not use @2 in production, use a complete version like x.x.x, see website for latest version:
       https://codesandbox.io/s/github/algolia/instantsearch-templates/tree/master/src/InstantSearch.js
     -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css">
-	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch-theme-algolia.min.css">
-	  <link rel="stylesheet" href="./index.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
-    <title>Algolia InstantSearch.js template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="SwordConnect">
+    <meta name="robots" content="NOINDEX,NOFOLLOW">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch-theme-algolia.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Recherche Ordre National des Pharmaciens</title>
+    <link href="//maintenance.ordre.pharmacien.fr/recherche/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <!--   <link href="//maintenance.ordre.pharmacien.fr/recherche/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+    <!--   <link href="//maintenance.ordre.pharmacien.fr/recherche/css/gsa-search.css" rel="stylesheet" type="text/css">
+    <!--   <link href="//maintenance.ordre.pharmacien.fr/recherche/css/gsa-search2.css" rel="stylesheet" type="text/css"> -->
   </head>
 
-  <body>
-    <div class="container">
-      <h2>
-        Products
-      </h2>
-      <div id="searchBox"></div>
-      <div class="twoColumns">
-        <div id="brand"></div>
-        <div id="products"></div>
-      </div>
-      <div id="pagination"></div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js"></script>
-    <script src="./index.js"></script>
-  </body>
+<body>
+<div class="container">
+  <div id="searchBox"></div>
+  <div class="twoColumns">
+    <div id="brand"></div>
+    <div id="paragraphs"></div>
+  </div>
+  <div id="pagination"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js"></script>
+<script src="./index.js"></script>
+</body>
 </html>
