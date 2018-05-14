@@ -1,0 +1,168 @@
+/**Advanced search link on homepage and search results page*/
+#sm-links {
+  max-width: 233px;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  float: right;
+  margin-right: -103px;
+}
+
+/**Increase in header height to support adv search link*/
+@media (max-width: 599px) {
+  #sh-center {
+    height: 105px;
+  }
+}
+
+#sh-center {
+  height: 83px;
+}
+
+@media (min-width: 1px) {
+  .home_links {
+    float: right;
+    margin: 2px 5px;
+    margin-right: 70px;
+    color:#7B7671;
+  }
+
+  #sh-settings {
+    margin-top: -27px;
+  }
+}
+
+@media (min-width: 600px) {
+  .home_links {
+    float: right;
+    margin: 2px 5px;
+    color:#7B7671;
+
+  }
+
+  .ss_adv_link {
+    margin-right: -100px;
+  }
+
+  #sh-settings {
+    margin-top: 0px;
+  }
+}
+
+/**Footer **/
+#footer {
+  height: 80px;
+}
+
+/**Footer ONP logo*/
+#footer-googleimg {
+  height: 37px;
+  background-image: url("../img/footer_onp.png");
+}
+
+/**header and footer background colour*/
+#search-header, #footer  {
+  background-color: #99D4DA;
+  /** 40 tra(opacity 0.6)   66BFC7
+  60% trans (opacity 0.4)   99D4DA
+  */
+}
+
+#footer-pb {
+  vertical-align: super;
+}
+
+#sh-btn-speech {
+  display:none;
+}
+
+.ss_adv_link {
+  color: #ffffff;
+}
+
+#sc-searchtools {
+  display:block;
+}
+
+#scrrs-menu {
+  display:none;
+}
+
+#scr-results-stats {
+  padding-top: 15px;
+}
+
+@media (min-width: 1px) and (max-width: 600px) {
+  #search_res_title {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+@media (min-width: 600px) {
+  #search_res_title {
+    float: right;
+    width: 434px;
+    font-size: 29px;
+    text-align: left;
+    /* font-style: italic; */
+    /* font-weight: bold; */
+    /* display: inline; */
+    margin-top: 5px;
+  }
+}
+@media (max-width: 1340px) and (min-width: 600px) {
+
+  #search_res_title {
+    float: right;
+    /* width: 323px; */
+    font-size: 30px;
+    text-align: left;
+    /* font-style: italic; */
+    /* font-weight: bold; */
+    /* margin-top: -1px; */
+  }
+}
+
+
+/**Results page logo alignment*/
+#sh-logo {
+  margin-top: 4px;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  background-color: #319494;
+  border-color: #319494;
+}
+
+.pagination > li > a, .pagination > li > span, .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+  color: #319494;
+}
+
+.docprevdesc {
+  vertical-align: sub;
+
+}
+
+#sh-empty {
+  height: 83px;
+}
+
+#scr-timeline {
+  overflow: hidden;
+}
+
+.tooltip-inner  img{
+  margin: 6px;
+}
+
+#scr-noresult {
+  line-height: 2em;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.tooltip.in {
+  filter: alpha(opacity=100) !important;
+  opacity: 1.0 !important;
+}

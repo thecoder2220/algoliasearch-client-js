@@ -1,0 +1,58 @@
+body {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+}
+
+em { background: cyan; font-style: normal }
+
+.twoColumns {
+  display: grid;
+  grid-template-columns: 20% 75%;
+  grid-gap: 5%
+}
+.ais-hits {
+  display: grid;
+  grid-template-columns: 47.5% 47.5%;
+  grid-gap: 5%;
+}
+.ais-hits--item {
+  background: #efefef;
+  margin-bottom: .5em;
+  padding: 1em;
+  min-height: 100px;
+}
+#searchBox {
+  margin-bottom: 2em;
+}
+#pagination {
+  margin: 0 auto;
+  text-align:center;
+}
+
+#search-header, #footer {
+  background-color: #99D4DA;
+}
+
+#search-header {
+  width: 100%;
+  width: 100%;
+  height: 100%;
+}
+#sh-left {
+  float: left;
+  width: 140px;
+  height: 76px;
+  margin-left: 2%;
+}
+
+#sh-logo {
+  margin-top: 4px;
+}
+
+@media (min-width: 1px) {
+  #sh-logo {
+    background: url('../img/header.png') transparent scroll no-repeat 50% 50%;
+    background-size: contain;
+    filter: none;
+  }
+}

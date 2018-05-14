@@ -19,7 +19,7 @@ search.addWidget(
 search.addWidget(
   instantsearch.widgets.searchBox({
     container: document.querySelector('#searchBox'),
-    placeholder: 'Search for paragraphs',
+    placeholder: 'Entrez les termes de recherche',
     autofocus: false /* Only to avoid live preview taking focus */,
   })
 );
@@ -33,7 +33,7 @@ search.addWidget(
 
 search.addWidget(
   instantsearch.widgets.pagination({
-    container: document.querySelector('#pagination'),
+    container: document.querySelector('#paginationB'),
   })
 );
 

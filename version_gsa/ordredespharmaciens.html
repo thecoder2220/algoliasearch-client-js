@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:swp="http://www.sword-connect.com/XSL/Functions" lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="SwordConnect">
+  <meta name="robots" content="NOINDEX,NOFOLLOW">
+  <title>Recherche Ordre National des Pharmaciens</title>
+  <link href="//maintenance.ordre.pharmacien.fr/recherche/favicon.ico" type="image/x-icon" rel="shortcut icon">
+  <link href="//maintenance.ordre.pharmacien.fr/recherche/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="//maintenance.ordre.pharmacien.fr/recherche/css/gsa-search.css" rel="stylesheet" type="text/css">
+  <link href="//maintenance.ordre.pharmacien.fr/recherche/css/gsa-search2.css" rel="stylesheet" type="text/css">
+  <script src="//maintenance.ordre.pharmacien.fr/recherche/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+  <script src="//maintenance.ordre.pharmacien.fr/recherche/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="//maintenance.ordre.pharmacien.fr/recherche/js/bootstrap3-typeahead.min.js"
+          type="text/javascript"></script>
+  <script src="//maintenance.ordre.pharmacien.fr/recherche/js/gsa-search.js" type="text/javascript"></script>
+  <script src="//maintenance.ordre.pharmacien.fr/recherche/js/gsa-search2.js" type="text/javascript"></script>
+  <script src="//maintenance.ordre.pharmacien.fr/recherche/js/ie10-viewport-bug-workaround.js"
+          type="text/javascript"></script>
+  <script src="//maintenance.ordre.pharmacien.fr/recherche/js/css3-mediaqueries.js" type="text/javascript"></script>
+  <script src="//maintenance.ordre.pharmacien.fr/recherche/js/jquery.corner.js" type="text/javascript"></script>
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+  <script type="text/javascript" id="init_preview">
+    var PreviewImage_alt = "La prévisualisation n'a pas pu être générée";
+
+    var PreviewData = {
+      "http://www.ordre.pharmacien.fr/content/download/146783/735678/version/10/file/le-journal-ordre-pharmaciens-35.pdf": {
+        "docSuffix": "pdf",
+        "zoomedPageWidth": 768,
+        "httpContentLength": 1681731,
+        "src": "file:///export/hda3/7.4.0/data/downloaded/16606273699748571216",
+        "readyPages": [5],
+        "pageThumbnailWidth": 160,
+        "limitedPages": true,
+        "query": "%22QUAND+FAMILIER%22",
+        "lastMessage": "Document Ready",
+        "resourceURI": "/session/e7c70e69-1b31-4e8e-b173-552534357419/",
+        "httpContentLoaded": 0,
+        "serviceContext": "/",
+        "url": "http%3A%2F%2Fwww.ordre.pharmacien.fr%2Fcontent%2Fdownload%2F146783%2F735678%2Fversion%2F10%2Ffile%2Fle-journal-ordre-pharmaciens-35.pdf",
+        "hits": [],
+        "state": "READY",
+        "contentType": "application/pdf"
+      },
+      "http://www.ordre.pharmacien.fr/content/download/187352/1048227/version/18/file/le-journal-ordre-pharmaciens-41.pdf": {
+        "docSuffix": "pdf",
+        "zoomedPageWidth": 768,
+        "httpContentLength": 3233013,
+        "src": "file:///export/hda3/7.4.0/data/downloaded/15648967630747775517",
+        "readyPages": [5],
+        "pageThumbnailWidth": 160,
+        "limitedPages": true,
+        "query": "%22QUAND+FAMILIER%22",
+        "lastMessage": "Document Ready",
+        "resourceURI": "/session/a1c150fd-ff36-43ce-a52a-8d1283290b52/",
+        "httpContentLoaded": 0,
+        "serviceContext": "/",
+        "url": "http%3A%2F%2Fwww.ordre.pharmacien.fr%2Fcontent%2Fdownload%2F187352%2F1048227%2Fversion%2F18%2Ffile%2Fle-journal-ordre-pharmaciens-41.pdf",
+        "hits": [],
+        "state": "READY",
+        "contentType": "application/pdf"
+      }
+    };
+  </script>
+  <link href="//maintenance.ordre.pharmacien.fr/recherche/css/timeline.css" rel="stylesheet" type="text/css">
+  <script src="//maintenance.ordre.pharmacien.fr/recherche/js/timeline-min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var user_lang = 'fr';
+    var page_end = 2;
+
+    var page_query = "QUAND FAMILIER";
+    var page_start = "0";
+    var page_site = "onp_all";
+
+    var nb_people_show = 0;
+    var nb_people_show_min = 0;
+    var nb_video_show = 0;
+    var nb_video_show_min = 0;
+    var loading_gif = '//maintenance.ordre.pharmacien.fr/recherche/img/loading.gif';
+  </script>
+</head>
+<body>
+<div id="search-header">
+  <a class="jslink" id="sh-left" href="#toHome">
+    <div id="sh-logo">
+    </div>
+  </a>
+  <div id="sh-right">
+    <span id="sh-id">[Non connecté]</span>
+    <div id="sh-settings" class="dropdown">
+      <span class="glyphicon glyphicon-cog dropdown-toggle" id="shs-dd" data-toggle="dropdown" aria-expanded="true">
+
+      </span>
+      <ul class="dropdown-menu pull-right" id="shsdd-main" role="menu" aria-labelledby="shs-dd">
+        <li role="presentation" class="shsdd-main" id="shsdd-lang">
+          <a class="jslink" role="menuitem" tabindex="-1" href="#toLangMenu">Langue</a></li>
+        <li role="presentation" class="shsdd-main">
+          <a role="menuitem" tabindex="-1" href="/user_help.html" ctype="help">Aide</a>
+        </li>
+        <li role="presentation" class="shsdd-lang">
+          <a class="jslink" role="menuitem" tabindex="-1" href="#changeLang_en">
+            <div class="flag flag-en"></div>
+            <div class="lang-menu-entry">Anglais</div>
+          </a>
+        </li>
+        <li role="presentation" class="shsdd-lang">
+          <a class="jslink" role="menuitem" tabindex="-1" href="#changeLang_fr">
+            <div class="flag flag-fr"></div>
+            <div class="lang-menu-entry">Français</div>
+          </a>
+        </li>
+        <li role="presentation" class="shsdd-back divider"></li>
+        <li role="presentation" id="shsdd-back" class="shsdd-back">
+          <a class="jslink" role="menuitem" tabindex="-1" href="#toMainMenu">Retour au menu</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="sh-center">
+    <form role="form" action="/search" method="get">
+      <input type="hidden" name="client" value="onp">
+      <input type="hidden" name="entqr" value="3">
+      <input type="hidden"  name="entqrm"  value="0">
+      <input  type="hidden" name="filter" value="0">
+      <input type="hidden" name="ie" value="utf-8">
+      <input type="hidden" name="oe"  value="UTF-8">
+      <input  type="hidden" name="proxystylesheet" value="onp">
+      <input type="hidden" name="site" value="onp_all">
+      <input  type="hidden" name="sort" value="date:D:L:d1">
+      <input type="hidden" name="ud" value="1">
+      <input type="hidden"  name="ulang"  value="en">
+      <input  type="hidden" name="wc" value="200">
+      <input type="hidden" name="wc_mc" value="1">
+      <input type="hidden" name="filter"  value="0">
+      <input type="hidden" name="access" value="p">
+      <input type="hidden" name="getfields" value="*">
+      <input type="hidden"  name="output" value="xml_no_dtd">
+      <input type="hidden" name="rc" value="1">
+      <input type="hidden" name="ulng" value="fr">
+      <span id="sh-txtbox-cont">
+        <label class="sr-only" for="sh-textbox">Termes de recherche</label>
+        <input class="form-control" x-webkit-speech="" name="q" id="sh-textbox"  placeholder="Entrez les termes de recherche"  value="&#34;QUAND FAMILIER&#34;">
+      </span>
+      <div id="sh-btn-speech"></div>
+      <span id="sh-btn-cont">
+        <button type="submit" class="btn btn-primary" id="search-btn" name="btnG" value="Search">
+          <div id="txt-button">Recherche</div>
+        </button>
+      </span>
+    </form>
+    <a href="#toAdv" class="jslink">
+      <span class="home_links ss_adv_link">
+        <span class="glyphicon glyphicon-chevron-right">
+        </span>
+        <span>Recherche avancée</span>
+      </span>
+    </a>
+  </div>
+</div>
+<div id="search-content">
+  <div id="sc-collections"><span class="sc-collections-inline selected" id="scci-onp_all" data-toggle="tooltip"
+                                 data-placement="bottom" data-html="true" data-original-title="" data-selector="true">Tous<span
+    class="badge scc-count-selected" id="scc-dn-0">0</span></span><span class="sc-collections-inline jslink"
+                                                                        id="scci-onp_ordre"
+                                                                        href="#searchCollec_onp_ordre"
+                                                                        data-toggle="tooltip" data-placement="bottom"
+                                                                        data-html="true" data-selector="true"
+                                                                        data-original-title="<img src='//maintenance.ordre.pharmacien.fr/recherche/img/col-types/logo-site-de-l-ordre2.jpg'/&gt; <br/&gt; <span class='tooltip-txt'&gt;Site institutionnel de l'Ordre national des pharmaciens</span&gt;"><span>Site de l'Ordre<span
+    class="badge scc-count" id="scc-dn-internetordre_lalettre">0</span></span></span><span
+    class="sc-collections-inline jslink" id="scci-onp_cespharm" href="#searchCollec_onp_cespharm" data-toggle="tooltip"
+    data-placement="bottom" data-html="true" data-selector="true"
+    data-original-title="<img src='//maintenance.ordre.pharmacien.fr/recherche/img/col-types/logo-cespharm.jpg'/&gt; <br/&gt; <span class='tooltip-txt'&gt;Informations et outils pour l'éducation et la prévention en Santé</span&gt;"><span>Cespharm<span
+    class="badge scc-count" id="scc-dn-cespharm">0</span></span></span><span class="sc-collections-inline jslink"
+                                                                             id="scci-onp_meddispar"
+                                                                             href="#searchCollec_onp_meddispar"
+                                                                             data-toggle="tooltip"
+                                                                             data-placement="bottom" data-html="true"
+                                                                             data-selector="true"
+                                                                             data-original-title="<img src='//maintenance.ordre.pharmacien.fr/recherche/img/col-types/logo-meddispar.jpg'/&gt; <br/&gt; <span class='tooltip-txt'&gt;Site sur les médicaments à dispensation particulière</span&gt;"><span>Meddispar<span
+    class="badge scc-count" id="scc-dn-meddispar">0</span></span></span><span class="sc-collections-inline jslink"
+                                                                              id="scci-onp_eqo"
+                                                                              href="#searchCollec_onp_eqo"
+                                                                              data-toggle="tooltip"
+                                                                              data-placement="bottom" data-html="true"
+                                                                              data-selector="true"
+                                                                              data-original-title="<img src='//maintenance.ordre.pharmacien.fr/recherche/img/col-types/logo-eqo.jpg'/&gt; <br/&gt; <span class='tooltip-txt'&gt;Evaluation Qualité Officine</span&gt;"><span>eQo<span
+    class="badge scc-count" id="scc-dn-eqo">0</span></span></span><span class="sc-collections-inline jslink"
+                                                                        id="scci-onp_acqo" href="#searchCollec_onp_acqo"
+                                                                        data-toggle="tooltip" data-placement="bottom"
+                                                                        data-html="true" data-selector="true"
+                                                                        data-original-title="<img src='//maintenance.ordre.pharmacien.fr/recherche/img/col-types/logo-acqo.jpg'/&gt; <br/&gt; <span class='tooltip-txt'&gt;Accueil Qualité Officine</span&gt;"><span>AcQO<span
+    class="badge scc-count" id="scc-dn-acqo">0</span></span></span>
+    <div id="scc-dropdown">
+      <div class="dropdown" id="sccdd-cont">
+        <button class="btn btn-default dropdown-toggle" type="button" id="sccddbtn" data-toggle="dropdown"
+                aria-expanded="true">Tous<span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="sccddbtn">
+          <li role="presentation"><a class="jslink" role="menuitem" tabindex="-1" href="#searchCollec_onp_all">Tous</a>
+          </li>
+          <li role="presentation"><a class="jslink" role="menuitem" tabindex="-1" href="#searchCollec_onp_ordre">Site de
+            l'Ordre</a></li>
+          <li role="presentation"><a class="jslink" role="menuitem" tabindex="-1" href="#searchCollec_onp_cespharm">Cespharm</a>
+          </li>
+          <li role="presentation"><a class="jslink" role="menuitem" tabindex="-1" href="#searchCollec_onp_meddispar">Meddispar</a>
+          </li>
+          <li role="presentation"><a class="jslink" role="menuitem" tabindex="-1" href="#searchCollec_onp_eqo">eQo</a>
+          </li>
+          <li role="presentation"><a class="jslink" role="menuitem" tabindex="-1" href="#searchCollec_onp_acqo">AcQO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="sc-dnav">
+    <div id="sc-filter" class="jslink" href="#toggleDnavMenu"><span class="glyphicon glyphicon-chevron-right"></span>
+    </div>
+    <div class="scd-meta" style="display: none">
+      <div class="scdm-title" mid="1" mname="SwordSource"><span class="scdmt-content">Source</span>
+        <div mval="internetordre" href="#applyDnavFilter"><span class="scdmv-content"
+                                                                data="internetordre">internetordre</span></div>
+      </div>
+    </div>
+    <div class="scd-meta" style="display: none">
+      <div class="scdm-title" mid="2" mname="Type"><span class="scdmt-content">Type</span>
+        <div mval="newspaper" href="#applyDnavFilter"><span class="scdmv-content" data="newspaper">Le Journal</span>
+        </div>
+      </div>
+    </div>
+    <div class="scd-meta" style="display: none">
+      <div class="scdm-title" mid="3" mname="PathElement_0"><span class="scdmt-content">Type</span>
+        <div mval="newspaper" href="#applyDnavFilter"><span class="scdmv-content" data="newspaper">Le Journal</span>
+        </div>
+      </div>
+    </div>
+    <div class="scd-meta" style="display: none">
+      <div class="scdm-title" mid="4" mname="SwordFileType"><span class="scdmt-content">Type de fichier</span>
+        <div mval="PDF" href="#applyDnavFilter"><span class="scdmv-content" data="PDF"><span
+          class="tiny-icon tiny-icon-mime-pdf" style="z-index: 0"></span>PDF</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="sc-searchtools">
+    <div class="dropdown scst" id="scst-language">
+      <div class="dropdown-toggle" id="scstl-title" data-toggle="dropdown" aria-expanded="true">
+        <span>Toutes les langues</span><span class="caret"></span></div>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="scstlt" id="scstl-menu">
+        <li role="presentation"><a role="menuitem" tabindex="-1" class="jslink" href="#langQuery_all">Toutes les
+          langues</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" class="jslink" href="#langQuery_en">
+          <div class="flag flag-en"></div>
+          <div class="lang-menu-entry">Anglais</div>
+        </a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" class="jslink" href="#langQuery_fr">
+          <div class="flag flag-fr"></div>
+          <div class="lang-menu-entry">Français</div>
+        </a></li>
+      </ul>
+    </div>
+    <div class="dropdown scst" id="scst-time" ng-click="preventClose($event)">
+      <div class="dropdown-toggle" id="scstt-title" data-toggle="dropdown" aria-expanded="true">
+        <span>Date indifférente</span><span class="caret"></span></div>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="scsttt" id="scstt-menu">
+        <li role="presentation"><a class="jslink" role="menuitem" tabindex="-1" href="#timeQuery_any">Date
+          indifférente</a></li>
+        <li role="presentation"><a class="jslink" role="menuitem" tabindex="-1" href="#timeQuery_day">Dernières 24
+          heures</a></li>
+        <li role="presentation"><a class="jslink" role="menuitem" tabindex="-1" href="#timeQuery_week">Dernière
+          semaine</a></li>
+        <li role="presentation"><a class="jslink" role="menuitem" tabindex="-1" href="#timeQuery_month">Dernier mois</a>
+        </li>
+        <li role="presentation"><a class="jslink" role="menuitem" tabindex="-1" href="#timeQuery_year">Dernière
+          année</a></li>
+        <li role="presentation" id="scsttm" class="jslink" href="#toggleCustDate"><a role="menuitem" tabindex="-1">Intervalle
+          personnalisé</a></li>
+        <li role="presentation" class="scsttm divider"></li>
+        <li role="presentation" class="scsttm">
+          <div class="cus_date">Début: <input type="date" id="CustDateStart" class="input-date" value=""
+                                              placeholder="yyyy-mm-dd"></div>
+          <div class="cus_date">Fin: <input type="date" id="CustDateEnd" class="input-date" value=""
+                                            placeholder="yyyy-mm-dd"></div>
+          <button id="CstmDate" class="jslink btn btn-primary" value="OK" href="#customTimeQuery">
+            <div id="txt-button">OK</div>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="dropdown scst" id="scst-sort">
+      <div class="dropdown-toggle" id="scsts-title" data-toggle="dropdown" aria-expanded="true"><span><b>Trier par pertinence</b></span><span
+        class="caret"></span></div>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="scstst" id="scsts-menu">
+        <li role="presentation"><a class="jslink" role="menuitem" tabindex="-1" href="#sort_">Trier par pertinence</a>
+        </li>
+        <li role="presentation"><a class="jslink" role="menuitem" tabindex="-1" href="#sort_date:D:S:d1">Trier par
+          date</a></li>
+      </ul>
+    </div>
+    <span id="scst-clear" class="glyphicon glyphicon-remove-circle undisplayed jslink" href="#clearSearchTools"><span>Effacer filtres</span></span>
+    <div id="scst-menu">
+      <div id="st-grid_list">
+        <div class="toGrid display-legend" legend="Afficher les résultats sous forme de grille"><span
+          class="glyphicon glyphicon-th-large"></span></div>
+        <div class="toList display-legend undisplayed" legend="Afficher les résultats sous forme de liste"><span
+          class="glyphicon glyphicon-th-list"></span></div>
+      </div>
+      <div id="st-timeline">
+        <div class="toTimeline display-legend" legend="Afficher les résultats en navigation temporelle"><span
+          class="glyphicon glyphicon-calendar"></span></div>
+        <div class="fromTimeline undisplayed" legend="Afficher les résultats sous forme classique"><span
+          class="glyphicon glyphicon-th"></span></div>
+      </div>
+      <div id="st-num_choice">
+        <div href="#changeNum_10" legend="Afficher 10 résultats par page" class="num selected display-legend first">
+          <span>10</span></div>
+        <div href="#changeNum_50" legend="Afficher 50 résultats par page" class="num jslink display-legend">
+          <span>50</span></div>
+        <div href="#changeNum_100" legend="Afficher 100 résultats par page" class="num jslink display-legend last">
+          <span>100</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="sc-results">
+    <div id="scr-results-stats"><span>Environ&nbsp;2&nbsp;résultats&nbsp;
+                  							(0.01&nbsp;secondes)
+                  						</span>
+      <div id="scrrs-menu">
+        <div id="grid_list">
+          <div class="toGrid display-legend" legend="Afficher les résultats sous forme de grille"><span
+            class="glyphicon glyphicon-th-large"></span></div>
+          <div class="toList display-legend undisplayed" legend="Afficher les résultats sous forme de liste"><span
+            class="glyphicon glyphicon-th-list"></span></div>
+        </div>
+        <div id="timeline">
+          <div class="toTimeline display-legend" legend="Afficher les résultats en navigation temporelle"><span
+            class="glyphicon glyphicon-calendar"></span></div>
+          <div class="fromTimeline undisplayed" legend="Afficher les résultats sous forme classique"><span
+            class="glyphicon glyphicon-th"></span></div>
+        </div>
+        <div id="num_choice">
+          <div href="#changeNum_10" legend="Afficher 10 résultats par page" class="num selected display-legend first">
+            <span>10</span></div>
+          <div href="#changeNum_50" legend="Afficher 50 résultats par page" class="num jslink display-legend">
+            <span>50</span></div>
+          <div href="#changeNum_100" legend="Afficher 100 résultats par page" class="num jslink display-legend last">
+            <span>100</span></div>
+        </div>
+      </div>
+    </div>
+    <div id="scr-suggest">
+      <div id="scr-dym"><span>Voulez-vous dire </span><span><a class="jslink" href="#spellingQuery">&quot;QUAND <b><i>FAMILIAR</i></b>&quot;</a></span><span>?</span>
+      </div>
+    </div>
+    <div class="scr-results">
+      <div class="scr-result">
+        <div class="scrr-preview undisplayed">
+          <div class="scrrp-image undisplayed"><a
+            href="http://www.ordre.pharmacien.fr/content/download/146783/735678/version/10/file/le-journal-ordre-pharmaciens-35.pdf"><img
+            src="//maintenance.ordre.pharmacien.fr/recherche/img/mime/pdf.png" alt="No preview to display."></a></div>
+          <span class="scrrp-magnifier glyphicon glyphicon-search undisplayed"></span></div>
+        <div class="scrr-block 1">
+          <div class="scrr-bold"><a title="Télécharger le document"
+                                    href="http://www.ordre.pharmacien.fr/content/download/146783/735678/version/10/file/le-journal-ordre-pharmaciens-35.pdf"><span
+            class="tiny-icon tiny-icon-mime-pdf"></span></a><span><a
+            href="http://www.ordre.pharmacien.fr/content/download/146783/735678/version/10/file/le-journal-ordre-pharmaciens-35.pdf"
+            ctype="c" rank="1" style="display:none" target="_blank">Le journal n°35</a><a
+            href="http://www.ordre.pharmacien.fr/communications/les-archives-du-journal/le-journal-n-35" ctype="c"
+            rank="1" target="_blank">Le journal n°35</a></span></div>
+          <div class="scrr-green"><span class="url">http://www.ordre.pharmacien.fr/communications/les-archives-du-journal/le-journal-n-35
+                           <div class="dropdown">
+                              <div class="dropdown-toggle scrrg-title" id="scrrg-title1" data-toggle="dropdown"
+                                   aria-expanded="true"><span class="caret"></span></div>
+                              <ul class="dropdown-menu scrrg-menu" role="menu" aria-labelledby="scrrgt-1"
+                                  id="scrrg-menu1">
+                                 <li role="presentation"><a class="jslink" href="#cacheRes_UOhsNPJVdeYJ"
+                                                            data="http://www.ordre.pharmacien.fr/content/download/146783/735678/version/10/file/le-journal-ordre-pharmaciens-35.pdf"
+                                                            oe="UTF-8" type="PDF" fullq="%22QUAND+FAMILIER%22">Version en cache<span>
+                                          														(267k)
+                                          													</span></a></li>
+                              </ul>
+                           </div></span></div>
+          <div class="scrr-snipet"><b>...</b> Bien sûr, certains patients MÉDICATION OFFICINALE, <b>QUAND</b> <b>FAMILIER</b>
+            NE DOIT PAS RIMER AVEC DANGER
+            Dossier <b>...</b>
+          </div>
+          <div class="scrr-gray"><span>12/06/2017</span><span><span> - </span>267k</span></div>
+          <span class="translation-button jslink" href="#translateResult_1">Traduire</span></div>
+      </div>
+      <div class="scr-result pair">
+        <div class="scrr-preview undisplayed">
+          <div class="scrrp-image undisplayed"><a
+            href="http://www.ordre.pharmacien.fr/content/download/187352/1048227/version/18/file/le-journal-ordre-pharmaciens-41.pdf"><img
+            src="//maintenance.ordre.pharmacien.fr/recherche/img/mime/pdf.png" alt="No preview to display."></a></div>
+          <span class="scrrp-magnifier glyphicon glyphicon-search undisplayed"></span></div>
+        <div class="scrr-block 2">
+          <div class="scrr-bold"><a title="Télécharger le document"
+                                    href="http://www.ordre.pharmacien.fr/content/download/187352/1048227/version/18/file/le-journal-ordre-pharmaciens-41.pdf"><span
+            class="tiny-icon tiny-icon-mime-pdf"></span></a><span><a
+            href="http://www.ordre.pharmacien.fr/content/download/187352/1048227/version/18/file/le-journal-ordre-pharmaciens-41.pdf"
+            ctype="c" rank="2" style="display:none" target="_blank">Le journal n°41</a><a
+            href="http://www.ordre.pharmacien.fr/communications/les-archives-du-journal/le-journal-n-41" ctype="c"
+            rank="2" target="_blank">Le journal n°41</a></span></div>
+          <div class="scrr-green"><span class="url">http://www.ordre.pharmacien.fr/communications/les-archives-du-journal/le-journal-n-41
+                           <div class="dropdown">
+                              <div class="dropdown-toggle scrrg-title" id="scrrg-title2" data-toggle="dropdown"
+                                   aria-expanded="true"><span class="caret"></span></div>
+                              <ul class="dropdown-menu scrrg-menu" role="menu" aria-labelledby="scrrgt-2"
+                                  id="scrrg-menu2">
+                                 <li role="presentation"><a class="jslink" href="#cacheRes_HbJO_CVNLNkJ"
+                                                            data="http://www.ordre.pharmacien.fr/content/download/187352/1048227/version/18/file/le-journal-ordre-pharmaciens-41.pdf"
+                                                            oe="UTF-8" type="PDF" fullq="%22QUAND+FAMILIER%22">Version en cache<span>
+                                          														(267k)
+                                          													</span></a></li>
+                              </ul>
+                           </div></span></div>
+          <div class="scrr-snipet"><b>...</b> Nous le rappelions en avril dans notre dossier « Médication officinale :
+            <b>quand</b> <b>familier</b> ne doit
+            pas rimer avec danger », le para- cétamol est souvent <b>...</b>
+          </div>
+          <div class="scrr-gray"><span>12/06/2017</span><span><span> - </span>267k</span></div>
+          <span class="translation-button jslink" href="#translateResult_2">Traduire</span></div>
+      </div>
+    </div>
+    <div id="scr-clusters" style="display: none">
+      <div id="scrc-title">Recherches associées à&nbsp;<b>"QUAND FAMILIER"</b>:
+
+      </div>
+      <div id="scrc-clusters"></div>
+    </div>
+    <nav id="pagination">
+      <ul class="pagination">
+        <li class="disabled"><a class="jslink" href="#toPage_prev" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        </li>
+        <li class="active"><a class="jslink" href="#toPage_0">1</a></li>
+        <li class="disabled"><a class="jslink" href="#toPage_next" aria-label="Next"><span
+          aria-hidden="true">&raquo;</span></a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="sc-rightbox">
+    <div id="sc-people" class="module"></div>
+    <div id="sc-video" class="module"></div>
+    <div id="sc-map" class="module"></div>
+  </div>
+</div>
+<div id="legend">
+  <div id="arrow"></div>
+  <span></span></div>
+<div id="preview">
+  <div class="scrrp-menutop"><span><span class="docprevdesc">Aperçu limité aux 5 premières pages</span><button
+    class="PreviewBtnPrevious glyphicon glyphicon-chevron-left"></button><button
+    class="PreviewBtnNext glyphicon glyphicon-chevron-right"></button><button
+    class="PreviewBtnHide hasMore glyphicon glyphicon-remove"></button><button
+    class="PreviewBtnMaximize hasMore glyphicon glyphicon-resize-full"></button></span></div>
+  <div id="preview_image"></div>
+  <div class="scrrp-menubottom"><span>Page x / y</span></div>
+</div>
+<footer id="footer">
+  <div id="footer-cont"><span id="footer-googleimg"></span><span id="footer-pb">Ordre national des pharmaciens 2016 - <a
+    href="http://www.ordre.pharmacien.fr/Mentions-legales">Mentions légales </a><span></span></span><br></div>
+</footer>
+</body>
+</html>
