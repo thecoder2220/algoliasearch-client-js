@@ -21,38 +21,13 @@ em { background: cyan; font-style: normal }
   padding: 1em;
   min-height: 100px;
 }
-#searchBox {
+#searchBoxB {
   margin-bottom: 2em;
 }
-#pagination {
+#paginationB {
   margin: 0 auto;
   text-align:center;
 }
 
-#search-header, #footer {
-  background-color: #99D4DA;
-}
 
-#search-header {
-  width: 100%;
-  width: 100%;
-  height: 100%;
-}
-#sh-left {
-  float: left;
-  width: 140px;
-  height: 76px;
-  margin-left: 2%;
-}
 
-#sh-logo {
-  margin-top: 4px;
-}
-
-@media (min-width: 1px) {
-  #sh-logo {
-    background: url('../img/header.png') transparent scroll no-repeat 50% 50%;
-    background-size: contain;
-    filter: none;
-  }
-}
