@@ -18,7 +18,7 @@ search.addWidget(
 
 search.addWidget(
   instantsearch.widgets.searchBox({
-    container: document.querySelector('#searchBox'),
+    container: document.querySelector('#searchBoxB'),
     placeholder: 'Entrez les termes de recherche',
     autofocus: false /* Only to avoid live preview taking focus */,
   })
